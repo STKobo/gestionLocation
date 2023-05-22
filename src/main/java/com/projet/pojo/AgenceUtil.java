@@ -16,19 +16,19 @@ public class AgenceUtil {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id; 
+    private Long agenceUtil_id; 
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "agence_id")
     private Agence agence; 
 
     @OneToOne
-    @JoinColumn(name= "id")
+    @JoinColumn(name= "utilisateur_id")
     private Utilisateur utilisateur; 
 
 
     public AgenceUtil(Long id, Agence agence, Utilisateur utilisateur) {
-        this.id = id;
+        this.agenceUtil_id = id;
         this.agence = agence;
         this.utilisateur = utilisateur;
     }

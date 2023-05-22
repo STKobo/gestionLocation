@@ -14,7 +14,7 @@ public class Utilisateur {
     
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id; 
+  private Long utilisateur_id; 
 
   private String nom;
 
@@ -30,7 +30,7 @@ public class Utilisateur {
 
 
     public Utilisateur(Long id, String nom, String prenom, String emal, String telephone, String password, String role) {
-        this.id = id;
+        this.utilisateur_id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.emal = emal;

@@ -14,7 +14,7 @@ public class Agence {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long agence_id;
 
     private String nom; 
 
@@ -26,7 +26,7 @@ public class Agence {
 
 
     public Agence(Long id, String nom, String adresse, String telephone, String email) {
-        this.id = id;
+        this.agence_id = id;
         this.nom = nom;
         this.adresse = adresse;
         this.telephone = telephone;

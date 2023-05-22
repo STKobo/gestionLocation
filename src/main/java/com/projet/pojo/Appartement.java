@@ -14,7 +14,7 @@ public class Appartement {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id; 
+    private Long appartement_id; 
 
     private String adresse; 
 
@@ -28,7 +28,7 @@ public class Appartement {
 
 
     public Appartement(Long id, String adresse, String taille, String nbChambre, String prix, Boolean etat) {
-        this.id = id;
+        this.appartement_id = id;
         this.adresse = adresse;
         this.taille = taille;
         this.nbChambre = nbChambre;

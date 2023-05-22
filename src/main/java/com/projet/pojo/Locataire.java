@@ -14,7 +14,7 @@ public class Locataire {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id; 
+    private Long locataire_id; 
 
     private String nom;
 
@@ -30,7 +30,7 @@ public class Locataire {
 
 
     public Locataire(Long id, String nom, String prenom, String adresse, String telephone, String email, Float montantLoyer) {
-        this.id = id;
+        this.locataire_id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.adresse = adresse;

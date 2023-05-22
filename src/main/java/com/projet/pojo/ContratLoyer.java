@@ -18,14 +18,14 @@ public class ContratLoyer {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id; 
+    private Long contratLoyer_id; 
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "locataire_id")
     private Locataire locataire;
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "appartement_id")
     private Appartement appartement;
 
     private LocalDate dateDebut; 

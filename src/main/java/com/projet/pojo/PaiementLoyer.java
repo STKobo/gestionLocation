@@ -18,10 +18,10 @@ public class PaiementLoyer {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id; 
+    private Long paiementLoyer_id; 
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "contratLoyer_id")
     private ContratLoyer contratLoyer;
 
     private LocalDate datePaiement; 
